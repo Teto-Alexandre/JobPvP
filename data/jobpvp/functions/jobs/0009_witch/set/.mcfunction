@@ -8,7 +8,7 @@
 
 
 # 職業のデータを取ってくる
-    function jobpvp:jobs/0004_witch/set/status
+    function jobpvp:jobs/0009_witch/set/status
 
 # 職業更新の処理
     execute as @p run function jobpvp:jobs/updata

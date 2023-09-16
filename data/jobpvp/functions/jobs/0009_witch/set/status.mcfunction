@@ -6,7 +6,7 @@
 # @within function jobpvp:jobs/0001_attacker/set/
 
 # 職業のIDを入れる(フォルダ名のxxxxの部分)
-    data modify storage jobpvp: job_ID set value 4
+    data modify storage jobpvp: job_ID set value 9
 # 職業の名前
     data modify storage jobpvp: job_name set value '{"text":"ウィッチ"}'
 # 職業のフレーバーテキスト
@@ -16,12 +16,13 @@
 
 # 防御力の増減
     #data modify storage jobpvp: armor set value 
+    data modify storage jobpvp: armor set value -0.5
 # 移動速度の増減
     #data modify storage jobpvp: movement_speed set value 
      data modify storage jobpvp: movement_speed set value 0.05
 # 最大体力の増減
     #data modify storage jobpvp: max_health set value 
-     data modify storage jobpvp: max_health set value -5
+     data modify storage jobpvp: max_health set value 5
 # ノックバック耐性の増減
     #data modify storage jobpvp: knockback_resistance set value 
     
