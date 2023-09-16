@@ -23,8 +23,8 @@ execute if score $ctgametime Temporary > $nowgametime Temporary run scoreboard p
 execute unless score $ctgametime Temporary > $nowgametime Temporary run scoreboard players set $remainct Temporary 0
 scoreboard players operation $ct_display1 Temporary = $remainct Temporary
 scoreboard players operation $ct_display2 Temporary = $remainct Temporary
-scoreboard players operation $ct_display1 Temporary /= #10 num
-scoreboard players operation $ct_display2 Temporary %= #10 num
+scoreboard players operation $ct_display1 Temporary /= #20 num
+scoreboard players operation $ct_display2 Temporary %= #20 num
 
 # クールタイム表記
 execute if score $remainct Temporary matches 1.. run title @s actionbar [{"text":"クールタイム中です! 残り: ","color":"red"},{"score":{"name": "$ct_display1","objective": "Temporary"}},{"text":".","color":"red"},{"score":{"name": "$ct_display2","objective": "Temporary"}},{"text":"秒","color":"red"}]

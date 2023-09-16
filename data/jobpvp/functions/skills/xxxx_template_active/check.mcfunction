@@ -23,8 +23,8 @@ execute if score $ctgametime Temporary > $nowgametime Temporary run scoreboard p
 execute unless score $ctgametime Temporary > $nowgametime Temporary run scoreboard players set $remainct Temporary 0
 scoreboard players operation $ct_display1 Temporary = $remainct Temporary
 scoreboard players operation $ct_display2 Temporary = $remainct Temporary
-scoreboard players operation $ct_display1 Temporary /= #10 num
-scoreboard players operation $ct_display2 Temporary %= #10 num
+scoreboard players operation $ct_display1 Temporary /= #20 num
+scoreboard players operation $ct_display2 Temporary %= #20 num
 
 # スキル独自の条件を付け足したいならここで
 execute unless data storage example: example run tag @s add temp_condition_failed
