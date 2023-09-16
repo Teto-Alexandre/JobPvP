@@ -25,6 +25,7 @@ scoreboard players operation $ct_display1 Temporary = $remainct Temporary
 scoreboard players operation $ct_display2 Temporary = $remainct Temporary
 scoreboard players operation $ct_display1 Temporary /= #20 num
 scoreboard players operation $ct_display2 Temporary %= #20 num
+scoreboard players operation $ct_display2 Temporary /= #2 num
 
 # スキル独自の条件を付け足したいならここで
 execute if score $GameTimer Global matches 1201.. run tag @s add temp_condition_failed
