@@ -13,6 +13,7 @@
     item modify entity @s weapon.offhand jobpvp:apply_enchantment
     playsound minecraft:block.enchantment_table.use player @a ~ ~ ~ 1 1 0
     particle minecraft:enchant ~ ~1 ~ 0.1 0.1 0.1 1 12 normal
+    item replace entity @s inventory.9 with book
 
 # MP減算
     execute store result score $temp Temporary run data get storage oh_my_dat: _[-4][-4][-4][-4][-4][-4][-4][-4].Skills[{Id:-1}].MP
