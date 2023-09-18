@@ -3,7 +3,7 @@
 # 職業の作成
 # ここでステータスを設定する
 #
-# @within function jobpvp:jobs/0001_attacker/set/
+# @within function jobpvp:jobs/0009_witch/set/
 
 # 職業のIDを入れる(フォルダ名のxxxxの部分)
     data modify storage jobpvp: job_ID set value 9
